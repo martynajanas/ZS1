@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+    <link rel="stylesheet" href="../style/form.css">
+</head>
+<body>
+   <!--
+   action - atrybut
+   get - przesyłanie małych ilości danych, nie stosować do wysyłania danych do bazy, mało bezpieczne, wartości pól pokazywane w adresie URL
+   post - dane wysyłane w nagłowkach HTTP, przy dużych plikach, przy wysyłaniu haseł, do wysyłania do bazy, nie są widoczne w URL 
+   >get jest szybszy od post
+   
+   >action, type, name - atrybut
+   >text, get, post - wartość
+   >input - element
+   -->
+    <form action="szymon.html" method="get" id="form1"> 
+       <fieldset>
+           <legend>Dane:</legend>
+            <input type="text" name="imie" size="20" maxlength="5" autofocus placeholder="Janusz" id="imie"> Imię<br><br>
+            
+            <input type="text" name="nazwisko" size="20" maxlength="5" autofocus placeholder="Kowalski" id="nazwisko"> Imię<br><br>
+
+            <input type="text" name="szkoła" maxlength="5" autofocus placeholder="ZS1" size="1" readonly id="szkola"> Szkoła<br><br>
+
+            <input type="password" name="haslo" id="haslo" maxlength="20" size="5"> Hasło<br><br>
+
+            <input type="reset">
+           
+            <input type="submit" id="przycisk" value="Zatwierdź">
+        
+        </fieldset>
+    </form>
+    
+    <form id="form2" action="sandra.php">
+       <h4>Wybierz kolor></h4><br>
+        <input type="radio" name="kolor" value="biały">biały
+        <input type="radio" name="kolor" value="czerwony" checked>czerwony
+        <input type="radio" name="kolor" value="zielony">zielony
+        <input type="submit" name="przycisk2">
+        
+    </form>
+    <hr>
+    <form id="form3" action="3.php">
+     <fieldset>
+      <legend>Wybierz imię</legend>
+       <input type="radio" name="imie" value="biały">Genowefa<br>
+       <input type="radio" name="imie" value="biały">Monitor<br>
+       <input type="radio" name="imie" value="biały">Belzebub<br>
+       <input type="radio" name="imie" value="biały">Hermenegilda<br><br>
+       <input type="submit" name="przycisk3">
+    </fieldset>   
+    </form>
+    <hr>
+    <form>
+       <input type="checkbox" value="rower" name="pojazd1">Mam rower
+       <input type="checkbox" value="samochod" name="pojazd2">Mam samochód
+       <input type="checkbox" value="samolot" name="pojazd3">Mam samolot
+       <input type="submit" name="przycisk4">
+       
+    </form>
+    <hr>
+    <form>
+        <input type="color" name="color">
+        <input type="submit" name="przycisk5">
+        
+        
+    </form>
+    
+    
+    
+</body>
+</html>
