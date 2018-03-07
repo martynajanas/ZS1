@@ -1,0 +1,36 @@
+body {
+    background-color: rgba(9, 237, 167, 0.4);
+    height: 800px;
+    width: 1000px;
+    background-color: mediumpurple;
+}
+
+#baner {
+    height: 30%;
+    width: 100%;
+    background-color: mediumpurple;
+        
+}
+
+#menu {
+    height: 70%;
+    width: 33%;
+    float: left;
+    background-color: blueviolet ;
+}
+
+#tresc {
+    height: 70%;
+    width: 33%;
+    float: left;
+    background-color: rebeccapurple;
+
+}
+
+#stopka {
+    height: 70%;
+    width: 33%;
+    background-color: deeppink;
+    float: left;
+    
+}

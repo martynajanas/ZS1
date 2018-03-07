@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formularze</title>
+    </head>
+<body>
+    <!--w Google Chrome nie działają etykiety-->
+  <form name="suwak">
+    <input type="range" id="suwak" list="procent">
+      <datalist id="procent">
+      <option value="0" label="0%"></option>
+      <option value="10"></option>
+      <option value="20"></option>
+      <option value="30"></option>
+      <option value="40"></option>
+      <option value="50" label="50%"></option>
+      <option value="60"></option>
+      <option value="70"></option>
+      <option value="80"></option>
+      <option value="90"></option>
+      <option value="100" label="100%"></option>
+      </datalist>
+    </form>
+    <hr>
+    <form name="www">
+    <input type="url" list="strony">
+    
+        
+        
+        <datalist id="strony">
+        <option value="http:\\wp.pl"></option>
+        <option value="http:\\onet.pl"></option>
+        <option value="http:\\interia.pl"></option>
+        <option value="http:\\o2.pl"></option>
+        </datalist>
+    </form>
+    <form name="przegladarka">
+        <label for="moja przegladarka">Wybierz przegladarke</label>
+    <input list="p" id="przegladarka" name="moja przegladarka">
+        <datalist id="p">
+        <option value="Edge">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Opera">
+        <option value="Safari">
+        </datalist>
+    </form>
+    <hr>
+    <h3>Temperatura</h3>
+    <meter min="30" max="42" value="36">Temperatura ciała</meter>
+    <h3>Temperatura 2</h3>
+    <meter low="30" high="42" max="50" value="50">Temperatura ciała</meter>
+    <hr>
+    <form name="inny">
+    <input type=text autofocus placeholder="imie" id="imie" required>
+    <input type=text autofocus placeholder="nazwisko" id="nazwisko" autocomplete="off" 
+pattern="[a-z]|[A-Z]{2,20}" required><br><br>
+        <input type="tel" name="telkom" pattern="([0-9]|[ ]|[-]){9,11}" placeholder="666777888"><br><br>
+        <input type="submit">
+    </form>
+    <hr>
+    <h3>Wiele opcji do wyboru</h3>
+    <label>Owoce:</label>
+    <datalist id="owoc">
+    <select name="owoce">
+        <option value="jablko">Jabłko</option>
+        <option value="banan">Banan</option>
+        <option value="pomelo">Pomelo</option>
+        </select>    
+    </datalist>
+    <input type="text" name="fruits" list="owoc" multiple>
+    </body>
+</html>

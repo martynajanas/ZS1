@@ -1,0 +1,36 @@
+body {
+    height: 800px;
+    width: 1000px;
+}
+
+#baner {
+    background-color: darkslateblue;
+    height: 25%;
+    width: 100%;
+}
+
+#baner2 {
+    background-color: dodgerblue;
+    height: 25%;
+    width: 100%;
+}
+
+#baner3 {
+    background-color: cornflowerblue;
+    height: 25%;
+    width: 50%;
+    float: left;
+}
+
+#baner4 {
+    background-color: darkkhaki;
+    height: 25%;
+    width: 50%;
+    float: left;
+}
+
+#baner5 {
+    background-color: bisque;
+    height: 25%;
+    width: 100%;
+}
