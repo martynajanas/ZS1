@@ -1,0 +1,37 @@
+ <!--
+zad.1 Użytkownik podaje z klawiatury liczbę szesnastkową. Oblicz i wyświetl w bloku wynik na ekranie w kolorze niebieskim.
+☺☺☺☺
+zad.2 Jacek i Agatka podają z klawiatury swój wzrost. Zsumuj ile wynosi łącznie i oblicz średni wzrost i wyświetl na ekranie. Wynik zaokrąglij do 2 liczb po przecinku.
+Łączny wzrost: ... cm
+Średni wzrost: 172.25 cm
+-->
+
+<html>
+<head>
+<title>Kartkówka</title>  
+  </head>
+  <body>
+   <h3> Zadanie 1</h3><br>
+    <div id="wynik"></div>
+    <script>
+        var wynik2 = document.getElementById('wynik');
+        var szesnastkowa = prompt('Podaj liczbę w   systemie szesnastkowym');
+        szesnastkowa1 = '0xF' + szesnastkowa;
+          szesnastkowa1 = Number(szesnastkowa1);
+        console.log(typeof(szesnastkowa1));
+          wynik2.innerHTML = '(' + szesnastkowa + ')<sub>16</sub> = (' + szesnastkowa1 + ')<sub>10</sub>';
+        wynik2.style.color = 'blue';
+    </script>
+<h3>Zadanie 2</h3><br>
+    <script>
+var jacek = prompt('Podaj wzrost Jacka');
+      var agatka = prompt('Podaj wzrost Agatki');
+jacek = parseInt(jacek);
+        agatka = parseInt(agatka);
+var suma = (jacek + agatka);
+      var srednia = (jacek + agatka)/2
+document.write("Łączny wzrost: " + suma + " cm <br>");
+document.write("Średni wzrost: " + srednia + " cm");
+</script>
+  </body>
+</html>
